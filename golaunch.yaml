@@ -1,0 +1,141 @@
+metadata:
+  template_name: Landing Page with Google Auth Login
+  template_description: A simple landing page with Google Auth using Nextjs and Supabase done.
+  template_github_owner: https://github.com/GoLaunch-dev/
+  tags:
+    - nextjs
+    - supabase
+    - react
+    - shadcn
+    - auth
+    - Google login
+    - landing page
+
+fields:
+  - label: Repo Name
+    codeId: repoName
+    description: Name of the new repository
+    codeDefined: '{{repoName}}'
+    type: string
+    defaultValue: waitlist-landing-page
+    required: true
+    aiGenable: false
+  - label: Site Name
+    codeId: siteName
+    description: Name of the website / company
+    codeDefined: '{{siteName}}'
+    type: string
+    defaultValue: My SaaS
+    required: true
+    aiGenable: false
+  - label: Headline
+    codeId: tagLine
+    description: Tagline of the site. 30-80 characters. This will be shown on the frontpage
+    codeDefined: '{{tagLine}}'
+    type: string
+    defaultValue: GoLaunch - Launch your SaaS. Fast.
+    aiGenable: true
+  - label: Headline Description
+    codeId: tagLineDescription
+    description: Description to be shown under the site's headline
+    codeDefined: '{{tagLineDescription}}'
+    type: string
+    aiGenable: true
+    defaultValue: Explore & Launch customizable SaaS boilerplate templates for your next project.
+  - label: Secondary Headline
+    codeId: secondTagLine
+    description: A secondary headline displayed further down
+    codeDefined: '{{secondTagLine}}'
+    type: string
+    aiGenable: true
+    defaultValue: Launch quicker, validate faster
+  - label: Feature 1 Title
+    codeId: feature1Title
+    description: Title for the first feature
+    codeDefined: '{{feature1Title}}'
+    type: string
+    aiGenable: true
+    defaultValue: Pick your boilerplate
+  - label: Feature 1 Description
+    codeId: feature1Description
+    description: Description for the first feature
+    codeDefined: '{{feature1Description}}'
+    type: string
+    aiGenable: true
+    defaultValue: Choose from a variety of vetted boilerplates to build your code from
+  - label: Feature 2 Title
+    codeId: feature2Title
+    description: Title for the first feature
+    codeDefined: '{{feature2Title}}'
+    type: string
+    aiGenable: true
+    defaultValue: Customize your data
+  - label: Feature 2 Description
+    codeId: feature2Description
+    description: Description for the first feature
+    codeDefined: '{{feature2Description}}'
+    type: string
+    aiGenable: true
+    defaultValue: Use our UI to input things like the name of your SaaS, your logo, and more. It'll automatically update the boilerplate code with it
+  - label: Feature 3 Title
+    codeId: feature3Title
+    description: Title for the first feature
+    codeDefined: '{{feature3Title}}'
+    type: string
+    aiGenable: true
+    defaultValue: Deploy your SaaS
+  - label: Feature 3 Description
+    codeId: feature3Description
+    description: Description for the first feature
+    codeDefined: '{{feature3Description}}'
+    type: string
+    defaultValue: Automatically clone the customized repo, and instantly deploy it
+    aiGenable: true
+  - label: CTA Headline
+    codeId: ctaHeadline
+    description: Headline that displays above the final CTA Button
+    codeDefined: '{{ctaHeadline}}'
+    type: string
+    defaultValue: Get early access
+    aiGenable: true
+  - label: CTA Description
+    codeId: ctaDescription
+    description: Description that displays above the final CTA Button
+    codeDefined: '{{ctaDescription}}'
+    type: string
+    defaultValue: We're launching soon! Sign up to be one of our first users.
+    aiGenable: true
+  - label: Waitlist Link
+    codeId: waitlistLink
+    description: The URL the user will be directed to clicking on the CTA Buttons
+    codeDefined: '{{waitlistLink}}'
+    type: string
+    defaultValue: https://google.com
+    aiGenable: false
+  - label: Support Email
+    codeId: supportEmail
+    description: The email shown on the ToS and privacy policy page
+    codeDefined: '{{waitlistLink}}'
+    type: string
+    defaultValue: mysupportemail@gmail.com
+    required: false
+    aiGenable: false
+  - label: Logo
+    codeId: logo
+    description: The logo for the site
+    type: png
+    paths:
+      - public/logo.png
+    required: false
+    aiGenable: false
+  - label: Hero Image
+    codeId: heroImage
+    description: The hero image of your site
+    type: png
+    paths:
+      - public/hero1.png
+    required: false
+    aiGenable: false
+
+ignore:
+  - golaunch.yaml
