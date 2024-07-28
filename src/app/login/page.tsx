@@ -19,17 +19,7 @@ export default function AuthenticationPage() {
           <LogoButton />
           <div className="relative z-20 mt-auto">
             <blockquote className="space-y-2">
-              <p className="text-lg">
-                {`"I hate the overhead involved in launching a
-                new SaaS. It takes 2 days just to get auth,
-                payments, and a landing page together. I
-                want to focus on validating my ideas and
-                building cool features that solves people's
-                problems " `}
-              </p>
-              <footer className="text-sm">
-                - Me, probably
-              </footer>
+              <p className="text-lg">{`{{loginQuote}}`}</p>
             </blockquote>
           </div>
         </div>
@@ -43,7 +33,7 @@ export default function AuthenticationPage() {
           >
             <div className="flex flex-col space-y-2 text-center">
               <h1 className="text-2xl font-semibold tracking-tight">
-                Launch your SaaS without the overhead
+                {`{{loginHeadline}}`}
               </h1>
             </div>
             <UserAuthForm />

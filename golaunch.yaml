@@ -1,6 +1,6 @@
 metadata:
   template_name: Landing Page with Google Auth Login
-  template_description: A simple landing page with Google Auth using Nextjs and Supabase done.
+  template_description: A simple landing page with Google Auth using Nextjs and Supabase.
   template_github_owner: https://github.com/GoLaunch-dev/
   tags:
     - nextjs
@@ -120,6 +120,26 @@ fields:
     defaultValue: mysupportemail@gmail.com
     required: false
     aiGenable: false
+  - label: Login page headline
+    codeId: loginHeadline
+    description: Headline that displays above above the login button on the login page
+    codeDefined: '{{loginHeadline}}'
+    type: string
+    defaultValue: Login to get started now
+    aiGenable: true
+  - label: Login page quote
+    codeId: loginQuote
+    description: Quote or testimonial that displays on the login page to entice people to sign up
+    codeDefined: '{{loginQuote}}'
+    type: string
+    defaultValue:
+      '"I hate the overhead involved in launching a
+      new SaaS. It takes 2 days just to get auth,
+      payments, and a landing page together. I
+      want to focus on validating my ideas and
+      building cool features that solves people's
+      problems" - CEO'
+    aiGenable: true
   - label: Logo
     codeId: logo
     description: The logo for the site
