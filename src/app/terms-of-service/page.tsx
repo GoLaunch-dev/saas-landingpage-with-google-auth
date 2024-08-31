@@ -4,9 +4,6 @@ export default function Page() {
       <h1 className="text-3xl font-bold mb-4">
         Terms of Service
       </h1>
-      <p className="mb-2">
-        <strong>Last updated:</strong> February 06, 2024
-      </p>
       <p className="mb-4">
         Please read these terms and conditions carefully
         before using Our Service.
@@ -297,10 +294,10 @@ export default function Page() {
           <li>
             By email:{' '}
             <a
-              href="sistilli.business@gmail.com"
+              href={`mailto:{{supportEmail}}`}
               className="text-blue-600 hover:underline"
             >
-              sistilli.business@gmail.com
+              {`{{supportEmail}}`}
             </a>
           </li>
         </ul>

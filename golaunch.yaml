@@ -115,7 +115,7 @@ fields:
   - label: Support Email
     codeId: supportEmail
     description: The email shown on the ToS and privacy policy page
-    codeDefined: '{{waitlistLink}}'
+    codeDefined: '{{supportEmail}}'
     type: string
     defaultValue: mysupportemail@gmail.com
     required: false
@@ -137,7 +137,7 @@ fields:
       new SaaS. It takes 2 days just to get auth,
       payments, and a landing page together. I
       want to focus on validating my ideas and
-      building cool features that solves people's
+      building cool features that solves peoples
       problems" - CEO'
     aiGenable: true
   - label: Logo
