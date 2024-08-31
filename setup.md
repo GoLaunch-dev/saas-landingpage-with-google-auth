@@ -104,3 +104,42 @@ Also, if you're a tech founder like myself, feel free to subscribe on [Youtube](
 ## Contribute
 
 If you have any suggestions or changes, feel free to create a PR!
+
+## Setting up Google Auth with Supabase
+
+To enable Google authentication for your SaaS, follow these steps:
+
+1. Create a Supabase project:
+
+   - Go to [https://supabase.com/](https://supabase.com/) and sign up or log in
+   - Create a new project and note down your project URL and anon key
+
+2. Set up Google OAuth credentials:
+
+   - Go to the [Google Cloud Console](https://console.cloud.google.com/)
+   - Create a new project or select an existing one
+   - Navigate to "APIs & Services" > "Credentials"
+   - Click "Create Credentials" > "OAuth client ID"
+   - Choose "Web application" as the application type
+   - Add your Supabase project URL to the "Authorized JavaScript origins"
+   - Add `https://<your-project>.supabase.co/auth/v1/callback` to the "Authorized redirect URIs"
+   - Create the client ID and note down the Client ID and Client Secret
+
+3. Configure Supabase Auth:
+
+   - In your Supabase project dashboard, go to "Authentication" > "Providers"
+   - Find Google in the list and enable it
+   - Enter the Client ID and Client Secret from step 2
+   - Save the changes
+
+4. Update your environment variables:
+
+   - Add the following to your `.env.local` file:
+     ```
+     NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+     NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+     ```
+
+5. Test your implementation:
+   - Run your app locally and try signing in with Google
+   - Ensure that the authentication flow works correctly and users are properly signed in
